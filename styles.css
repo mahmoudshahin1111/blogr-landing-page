@@ -105,43 +105,12 @@ html * {
   margin: 0;
 }
 
-.b__bannerContainerHeader {
-  text-align: center;
-  word-break: keep-all;
-  margin: 0;
-}
-
-.b__bannerContainerSubHeader {
-  font-size: 0.6em;
-  font-weight: 300;
-  margin: 20px 0 50px 0;
-}
-
 .b__navMenuButton {
   position: absolute;
   right: 10px;
   background-color: transparent;
   outline: 0;
   border: 0;
-}
-
-.b__headerBackground {
-  position: absolute;
-  top: 0;
-  left: 0;
-  overflow: hidden;
-  z-index: -1;
-  border-radius: 0 0 0 80px;
-  height: 100%;
-}
-
-.b__headerBackgroundImg {
-  -o-object-fit: cover;
-     object-fit: cover;
-  -webkit-transform: scale(3);
-          transform: scale(3);
-  margin-top: 0;
-  margin-left: 100px;
 }
 
 .b__bannerContainerInfo {
@@ -162,6 +131,18 @@ html * {
   text-align: center;
 }
 
+.b__bannerContainerHeader {
+  text-align: center;
+  word-break: keep-all;
+  margin: 0;
+}
+
+.b__bannerContainerSubHeader {
+  font-size: 0.6em;
+  font-weight: 300;
+  margin: 20px 0 50px 0;
+}
+
 .b__bannerContainerButton {
   padding: 10px 15px;
   border-radius: 20px;
@@ -175,5 +156,24 @@ html * {
 .b__activeButton {
   background-color: white;
   color: #ff8f70;
+}
+
+.b__headerBackground {
+  position: absolute;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  z-index: -1;
+  border-radius: 0 0 0 80px;
+  height: 100%;
+}
+
+.b__headerBackgroundImg {
+  -o-object-fit: cover;
+     object-fit: cover;
+  -webkit-transform: scale(3);
+          transform: scale(3);
+  margin-top: 0;
+  margin-left: 100px;
 }
 /*# sourceMappingURL=styles.css.map */

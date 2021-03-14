@@ -58,6 +58,29 @@ html {
   font-weight: 700;
   margin: 0;
 }
+.b__navMenuButton {
+  position: absolute;
+  right: 10px;
+  background-color: transparent;
+  outline: 0;
+  border: 0;
+}
+
+
+//  Section 1
+
+.b__bannerContainerInfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.8em;
+  text-align: center;
+}
+
+.b__bannerContainerButtons {
+}
+
 .b__bannerContainerHeader {
   text-align: center;
   word-break: keep-all;
@@ -69,14 +92,20 @@ html {
   font-weight: 300;
   margin: 20px 0 50px 0;
 }
-
-.b__navMenuButton {
-  position: absolute;
-  right: 10px;
+.b__bannerContainerButton {
+  padding: 10px 15px;
+  border-radius: 20px;
   background-color: transparent;
-  outline: 0;
-  border: 0;
+  outline: none;
+  border: 1px solid map-get($colors, "neutral-1");
+  color: map-get($colors, "neutral-1");
+  font-weight: 700;
 }
+.b__activeButton {
+  background-color: map-get($colors, "neutral-1");
+  color: map-get($colors, "gradient-1");
+}
+
 .b__headerBackground {
   position: absolute;
   top: 0;
@@ -93,25 +122,5 @@ html {
   margin-left: 100px;
 }
 
-.b__bannerContainerInfo {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: 0.8em;
-  text-align: center;
-}
+// Section 2
 
-.b__bannerContainerButton {
-  padding: 10px 15px;
-  border-radius: 20px;
-  background-color: transparent;
-  outline: none;
-  border: 1px solid map-get($colors, "neutral-1");
-  color: map-get($colors, "neutral-1");
-  font-weight: 700;
-}
-.b__activeButton {
-  background-color: map-get($colors, "neutral-1");
-  color: map-get($colors, "gradient-1");
-}
