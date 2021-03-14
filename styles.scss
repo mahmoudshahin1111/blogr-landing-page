@@ -15,8 +15,11 @@ $colors: (
 );
 
 @each $key, $color in $colors {
-  .color-#{$key} {
+  .bg-color-#{$key} {
     background-color: $color;
+  }
+  .text-color-#{$key} {
+    color: $color;
   }
 }
 
@@ -43,7 +46,7 @@ html {
   height: 90vh;
   padding-bottom: 20px;
   position: relative;
-  color: map-get($colors, "neutral-1");
+
   font-size: 1.8em;
 }
 .b__nav {
@@ -65,7 +68,6 @@ html {
   outline: 0;
   border: 0;
 }
-
 
 //  Section 1
 
@@ -98,12 +100,10 @@ html {
   background-color: transparent;
   outline: none;
   border: 1px solid map-get($colors, "neutral-1");
-  color: map-get($colors, "neutral-1");
   font-weight: 700;
 }
 .b__activeButton {
   background-color: map-get($colors, "neutral-1");
-  color: map-get($colors, "gradient-1");
 }
 
 .b__headerBackground {
@@ -124,3 +124,19 @@ html {
 
 // Section 2
 
+.b__section {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+}
+.b__sectionHeader {
+  font-size: 1.2em;
+}
+.b__sectionImgContainer {
+}
+.b__sectionContent {
+  font-size: 0.8em;
+  text-align: center;
+}
