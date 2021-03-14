@@ -1,0 +1,117 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Overpass:wght@300;600&display=swap");
+$colors: (
+  primary-1: hsl(356, 100%, 66%),
+  primary-2: hsl(355, 100%, 74%),
+  primary-3: hsl(208, 49%, 24%),
+  neutral-1: hsl(0, 0%, 100%),
+  neutral-2: hsl(240, 2%, 79%),
+  neutral-3: hsl(207, 13%, 34%),
+  neutral-4: hsl(240, 10%, 16%),
+  gradient-1: hsl(13, 100%, 72%),
+  gradient-2: hsl(353, 100%, 62%),
+  gradient-3: hsl(237, 17%, 21%),
+  gradient-4: hsl(237, 23%, 32%),
+);
+
+@each $key, $color in $colors {
+  .color-#{$key} {
+    background-color: $color;
+  }
+}
+
+body,
+html {
+  font-family: "Overpass", "Ubuntu", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  padding: 0;
+  margin: 0;
+
+  * {
+    box-sizing: border-box;
+  }
+}
+
+.b__page {
+  display: flex;
+  flex-direction: column;
+}
+.b__header {
+  display: flex;
+  flex-direction: column;
+  height: 90vh;
+  padding-bottom: 20px;
+  position: relative;
+  color: map-get($colors, "neutral-1");
+  font-size: 1.8em;
+}
+.b__nav {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: 100px;
+}
+.b__navTitle {
+  position: absolute;
+  left: 10px;
+  font-weight: 700;
+  margin: 0;
+}
+.b__bannerContainerHeader {
+  text-align: center;
+  word-break: keep-all;
+  margin: 0;
+}
+
+.b__bannerContainerSubHeader {
+  font-size: 0.6em;
+  font-weight: 300;
+  margin: 20px 0 50px 0;
+}
+
+.b__navMenuButton {
+  position: absolute;
+  right: 10px;
+  background-color: transparent;
+  outline: 0;
+  border: 0;
+}
+.b__headerBackground {
+  position: absolute;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  z-index: -1;
+  border-radius: 0 0 0 80px;
+  height: 100%;
+}
+.b__headerBackgroundImg {
+  object-fit: cover;
+  transform: scale(3);
+  margin-top: 0;
+  margin-left: 100px;
+}
+
+.b__bannerContainerInfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.8em;
+  text-align: center;
+}
+
+.b__bannerContainerButton {
+  padding: 10px 15px;
+  border-radius: 20px;
+  background-color: transparent;
+  outline: none;
+  border: 1px solid map-get($colors, "neutral-1");
+  color: map-get($colors, "neutral-1");
+  font-weight: 700;
+}
+.b__activeButton {
+  background-color: map-get($colors, "neutral-1");
+  color: map-get($colors, "gradient-1");
+}
