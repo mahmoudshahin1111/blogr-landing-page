@@ -95,6 +95,7 @@ html {
   font-weight: 500;
   padding: 0;
   margin: 0;
+  overflow-x: hidden;
 }
 
 body *,
@@ -230,9 +231,16 @@ html * {
 }
 
 .b__navMenuItemButtonIcon {
+  display: inline-block;
   margin: 0 5px;
-  -webkit-transition: all 300ms ease;
-  transition: all 300ms ease;
+  width: 10px;
+  height: 10px;
+  background-size: contain;
+  background: url("./images/icon-arrow-dark.svg") center no-repeat;
+  -webkit-transition: -webkit-transform 300ms ease;
+  transition: -webkit-transform 300ms ease;
+  transition: transform 300ms ease;
+  transition: transform 300ms ease, -webkit-transform 300ms ease;
 }
 
 .b__navSubMenu {
@@ -250,7 +258,6 @@ html * {
   padding: 0;
   border-radius: 5px;
   overflow: hidden;
-  height: 2.5em;
   -webkit-transition: height 300ms ease;
   transition: height 300ms ease;
 }
@@ -400,6 +407,15 @@ html * {
   font-size: 1.2em;
 }
 
+.b__sectionImgContainer {
+  height: 200px;
+  width: 100vw;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-image: url("./images/illustration-editor-mobile.svg");
+}
+
 .b__sectionContent {
   font-size: 0.8em;
   text-align: center;
@@ -422,8 +438,6 @@ html * {
   position: absolute;
   top: -150px;
   left: 0;
-  -o-object-fit: contain;
-     object-fit: contain;
   width: 100%;
   z-index: 10;
 }
@@ -431,8 +445,6 @@ html * {
 .b__artSectionBackgroundLayerCircle {
   width: 100%;
   height: 80%;
-  -o-object-fit: contain;
-     object-fit: contain;
   -webkit-transform: scale(1.6);
           transform: scale(1.6);
   margin-top: -100px;
@@ -503,5 +515,96 @@ html * {
 .b__footerLink {
   color: unset;
   text-decoration: none;
+}
+
+.b__desktopNav {
+  display: none;
+}
+
+@media (min-width: 376px) {
+  .b__header {
+    height: 60vh;
+    padding: 0;
+    margin: 0;
+  }
+  .b__desktopNav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    height: 20vh;
+    color: white;
+    font-size: 0.7em;
+    padding: 0;
+    margin: 0;
+  }
+  .b__desktopNavLogo {
+    margin: 0 5vw;
+  }
+  .b__desktopNavLinksList {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .b__desktopNavLinkListItem {
+    margin-left: 10px;
+  }
+  .b__desktopNavLinkIcon {
+    background: url("./images/icon-arrow-light.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    margin: 0 5px;
+  }
+  .b__desktopNavLink {
+    text-decoration: none;
+    color: white;
+    background-color: transparent;
+    border: 0;
+    outline: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .b__desktopNavButtonsList {
+    position: absolute;
+    right: 1.2vw;
+    list-style: none;
+    font-size: 0.7em;
+    font-weight: 700;
+  }
+  .b__desktopNavMenuLoginButton {
+    padding: 10px 20px;
+    text-align: center;
+  }
+  .b__desktopNavMenuSignUpButton {
+    padding: 10px 20px;
+    background: white;
+    border-radius: 25px;
+    color: #ff525d;
+    text-align: center;
+  }
 }
 /*# sourceMappingURL=styles.css.map */
