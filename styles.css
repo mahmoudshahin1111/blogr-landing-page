@@ -114,6 +114,7 @@ html * {
 }
 
 .b__header {
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -122,8 +123,6 @@ html * {
       -ms-flex-direction: column;
           flex-direction: column;
   height: 90vh;
-  padding-bottom: 20px;
-  position: relative;
   font-size: 1.8em;
 }
 
@@ -131,14 +130,10 @@ html * {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+  height: 100px;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  height: 100px;
 }
 
 .b__navTitle {
@@ -148,12 +143,180 @@ html * {
   margin: 0;
 }
 
-.b__navMenuButton {
+.b__navMenuButtonContainer {
   position: absolute;
   right: 10px;
   background-color: transparent;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.b__navMenuButton {
   outline: 0;
   border: 0;
+  background-color: transparent;
+  background-position: center;
+  background-size: cover;
+  width: 20px;
+  height: 15px;
+  background-image: url("./images/icon-hamburger.svg");
+}
+
+.b__navMenuButtonIconClosed {
+  background-image: url("./images/icon-close.svg");
+}
+
+.b__navMenu {
+  position: absolute;
+  top: 5vh;
+  right: 2.5vw;
+  width: 90vw;
+  height: 80vh;
+  padding: 0;
+  z-index: 1000;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 5px;
+  overflow: hidden;
+  -webkit-box-shadow: 0 5px 20px 0 #c8c8cb;
+          box-shadow: 0 5px 20px 0 #c8c8cb;
+  list-style: none;
+  -webkit-transition: all 1s ease;
+  transition: all 1s ease;
+  font-size: 0.5em;
+  font-weight: 700;
+}
+
+.b__navMenuItem {
+  margin: 15px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 80%;
+}
+
+.b__navMenuItemButton {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 10px 0;
+}
+
+.b__navMenuItemButtonIcon {
+  margin: 0 5px;
+  -webkit-transition: all 300ms ease;
+  transition: all 300ms ease;
+}
+
+.b__navSubMenu {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0;
+  border-radius: 5px;
+  overflow: hidden;
+  height: 2.5em;
+  -webkit-transition: height 300ms ease;
+  transition: height 300ms ease;
+}
+
+.b__navSubMenuItem {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+  padding: 10px 0;
+}
+
+.b__navSubMenuButtonContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.b__navSubMenuItemButton {
+  text-align: center;
+}
+
+.b__navMenuDivider {
+  width: 100%;
+  height: 1px;
+  background-color: #c8c8cb;
+  margin: 20px 0;
+}
+
+.b__navMenuLoginButton {
+  padding: 15px;
+  text-align: center;
+  border-radius: 25px;
+  color: #4b5862;
+}
+
+.b__navMenuSignUpButton {
+  padding: 15px;
+  background: -webkit-gradient(linear, left top, right top, from(#ff8f70), to(#ff3d54));
+  background: linear-gradient(to right, #ff8f70, #ff3d54);
+  border-radius: 25px;
+  color: white;
+  text-align: center;
+}
+
+.b__navMenuClosed {
+  height: 0;
+}
+
+.b__navMenuItemButtonIconClosed {
+  -webkit-transform: rotate(-180deg);
+          transform: rotate(-180deg);
 }
 
 .b__bannerContainerInfo {
@@ -243,8 +406,8 @@ html * {
 }
 
 .b__artSection {
-  margin-top: 200px;
-  height: 95vh;
+  margin-top: 30vh;
+  height: 96vh;
   position: relative;
 }
 
@@ -277,7 +440,7 @@ html * {
 
 .b__artSectionBackgroundInfo {
   position: absolute;
-  top: 220px;
+  top: 150px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -288,12 +451,15 @@ html * {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 0 20px;
+  padding: 0 15px;
 }
 
 .b__artSectionBackgroundInfoDetails {
   font-size: 0.8em;
   text-align: center;
+  height: 100px;
+  overflow: hidden;
+  line-height: 2em;
 }
 
 .b__footerContainer {

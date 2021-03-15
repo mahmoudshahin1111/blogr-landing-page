@@ -1,182 +1,206 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="icon"
-      href="./images/favicon-32x32.png"
-      type="image/gif"
-      sizes="16x16"
-    />
-    <title>Mahmoud Shahin</title>
-    <link rel="stylesheet" href="./styles.css" />
-  </head>
-  <body>
-    <main class="b__page">
-      <section class="b__header">
-        <div class="b__nav text-color-neutral-1">
-          <h4 class="b__navTitle">Blogr</h4>
-          <button class="b__navMenuButton">
-            <img src="./images/icon-hamburger.svg" width="25px" alt="" />
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" href="./images/favicon-32x32.png" type="image/gif" sizes="16x16" />
+  <title>Mahmoud Shahin</title>
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+
+<body>
+  <main class="b__page">
+    <section class="b__header">
+      <div class="b__nav text-color-neutral-1">
+        <h4 class="b__navTitle">Blogr</h4>
+        <div class="b__navMenuButtonContainer">
+          <button id="b__navMenuButton" class="b__navMenuButton">
+
+          </button>
+          <ol class="b__navMenu bg-color-neutral-1 b__navMenuClosed">
+            <li class="b__navMenuItem ">
+              <div class="b__navSubMenuButtonContainer">
+                <a class="b__navSubMenuItemButton text-color-neutral-3" type="button">
+                  Link 1
+                  <img class="b__navMenuItemButtonIcon"
+                    src="./images/icon-arrow-dark.svg" width="auto" height="auto" alt="" />
+                </a>
+                <ol class="b__navSubMenu bg-color-neutral-2 b__navMenuClosed">
+                  <li class="b__navSubMenuItem bg-color-neutral-2">
+                    <a class="b__navSubMenuItemButton text-color-neutral-3" type="button">
+                      Sub Link 1
+                    </a>
+                  </li>
+                </ol>
+              </div>
+            </li>
+            <li class="b__navMenuItem">
+              <div class="b__navMenuDivider"></div>
+            </li>
+            <li class="b__navMenuItem">
+              <a class="b__navMenuLoginButton">Login</a>
+              <a class="b__navMenuSignUpButton bg-color-gradient-1">Sign Up</a>
+            </li>
+          </ol>
+        </div>
+      </div>
+
+      <div class="b__bannerContainerInfo text-color-neutral-1">
+        <h3 class="b__bannerContainerHeader">
+          A modern <br />publishing platform
+        </h3>
+        <p class="b__bannerContainerSubHeader">
+          Grow your audience and build your <br />online brand
+        </p>
+        <div class="b__bannerContainerButtons">
+          <button class="b__bannerContainerButton text-color-primary-1 b__activeButton">
+            Start for Free
+          </button>
+          <button class="b__bannerContainerButton text-color-neutral-1">
+            Learn More
           </button>
         </div>
+      </div>
+      <span class="b__headerBackground bg-color-primary-1">
+        <img class="b__headerBackgroundImg" src="./images/bg-pattern-intro.svg" width="100%" height="100%" alt="" />
+      </span>
+    </section>
+    <section class="b__section">
+      <h4 class="b__sectionHeader text-color-primary-3">Header 1</h4>
+      <div class="b__sectionImgContainer">
+        <img src="./images/illustration-editor-mobile.svg" width="100%" alt="" />
+      </div>
+      <h4 class="b__sectionHeader text-color-primary-3">Header 1</h4>
+      <p class="b__sectionContent text-color-neutral-4">
+        Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
+        commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus
+        et magnis dis parturient montes, nascetur ridiculus mus. Donec quam
+      </p>
+      <h4 class="b__sectionHeader text-color-primary-3">Header 1</h4>
+      <p class="b__sectionContent text-color-neutral-4">
+        Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
+        commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus
+        et magnis dis parturient montes, nascetur ridiculus mus. Donec quam
+        felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla
+        consequat massa quis enim. Donec pede justo, fringilla vel, aliquet
+        nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a,
+        venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium.
+        Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean
+        vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat
+      </p>
+    </section>
+    <section class="b__artSection">
+      <div class="b__artSectionBackgroundLayers bg-color-gradient-3">
+        <img class="b__artSectionBackgroundLayerCircle" src="./images/bg-pattern-circles.svg" alt="" />
+      </div>
+      <img class="b__artSectionBackgroundLayerPhones" src="./images/illustration-phones.svg" alt="" />
+      <div class="b__artSectionBackgroundInfo">
+        <h3 class="b__artSectionBackgroundInfoHeader text-color-neutral-1">
+          Header
+        </h3>
+        <p class="b__artSectionBackgroundInfoDetails text-color-neutral-2">
+          quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius
+          laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel
+          augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam
+          rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam
+          semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam
+          nunc, blandit vel, luctus pulvinar, hendrerit id, lorem.
+        </p>
+      </div>
+    </section>
+    <section class="b__section">
 
-        <div class="b__bannerContainerInfo text-color-neutral-1">
-          <h3 class="b__bannerContainerHeader">
-            A modern <br />publishing platform
-          </h3>
-          <p class="b__bannerContainerSubHeader">
-            Grow your audience and build your <br />online brand
-          </p>
-          <div class="b__bannerContainerButtons">
-            <button
-              class="b__bannerContainerButton text-color-primary-1 b__activeButton"
-            >
-              Start for Free
-            </button>
-            <button class="b__bannerContainerButton text-color-neutral-1">
-              Learn More
-            </button>
-          </div>
-        </div>
-        <span class="b__headerBackground bg-color-primary-1">
-          <img
-            class="b__headerBackgroundImg"
-            src="./images/bg-pattern-intro.svg"
-            width="100%"
-            height="100%"
-            alt=""
-          />
-        </span>
-      </section>
-      <section class="b__section">
-        <h4 class="b__sectionHeader text-color-primary-3">Header 1</h4>
-        <div class="b__sectionImgContainer">
-          <img
-            src="./images/illustration-editor-mobile.svg"
-            width="100%"
-            alt=""
-          />
-        </div>
-        <h4 class="b__sectionHeader text-color-primary-3">Header 1</h4>
-        <p class="b__sectionContent text-color-neutral-4">
-          Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
-          commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus
-          et magnis dis parturient montes, nascetur ridiculus mus. Donec quam
-          
-        </p>
-        <h4 class="b__sectionHeader text-color-primary-3">Header 1</h4>
-        <p class="b__sectionContent  text-color-neutral-4">
-          Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
-          commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus
-          et magnis dis parturient montes, nascetur ridiculus mus. Donec quam
-          felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla
-          consequat massa quis enim. Donec pede justo, fringilla vel, aliquet
-          nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a,
-          venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium.
-          Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean
-          vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat
-         
-        </p>
-      </section>
-      <section class="b__artSection">
-        <div class="b__artSectionBackgroundLayers bg-color-gradient-3">
-          <img
-            class="b__artSectionBackgroundLayerCircle"
-            src="./images/bg-pattern-circles.svg"
-            alt=""
-          />
-        </div>
-        <img
-          class="b__artSectionBackgroundLayerPhones"
-          src="./images/illustration-phones.svg"
-          alt=""
-        />
-        <div class="b__artSectionBackgroundInfo">
-          <h3 class="b__artSectionBackgroundInfoHeader text-color-neutral-1">
-            Header
-          </h3>
-          <p class="b__artSectionBackgroundInfoDetails text-color-neutral-2">
-            quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius
-            laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel
-            augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam
-            rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam
-            semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam
-            nunc, blandit vel, luctus pulvinar, hendrerit id, lorem.
-          </p>
-        </div>
-      </section>
-      <section class="b__section">
-        <h4 class="b__sectionHeader text-color-primary-3">Header 1</h4>
-        <div class="b__sectionImgContainer">
-          <img
-            src="./images/illustration-laptop-mobile.svg"
-            width="100%"
-            alt=""
-          />
-        </div>
-        <h4 class="b__sectionHeader text-color-primary-3">Header 1</h4>
-        <p class="b__sectionContent text-color-neutral-4">
-          Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
-          commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus
-          et magnis dis parturient montes, nascetur ridiculus mus. Donec quam
-          
-        </p>
-        <h4 class="b__sectionHeader text-color-primary-3">Header 1</h4>
-        <p class="b__sectionContent  text-color-neutral-4">
-          Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
-          commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus
-          et magnis dis parturient montes, nascetur ridiculus mus. Donec quam
-          felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla
-          consequat massa quis enim. Donec pede justo, fringilla vel, aliquet
-          nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a,
-          venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium.
-          Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean
-          vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat
-         
-        </p>
-      </section>
-    </main>
-    <footer class="b__footerContainer bg-color-neutral-4">
-      <h4 class="b__footerContainerTitle text-color-neutral-1">Blogr</h4>
-      <p class="text-color-neutral-1"><strong>Product</strong></p>
-      <ol class="b__footerList text-color-neutral-2">
-        <li class="b__footerItem">
-          <a href="" class="b__footerLink">Overview</a>
-        </li>
-        <li class="b__footerItem">
-          <a href="" class="b__footerLink">Pricing</a>
-        </li>
-        <li class="b__footerItem">
-          <a href="" class="b__footerLink">Marketplace</a>
-        </li>
-        <li class="b__footerItem">
-          <a href="" class="b__footerLink">Features</a>
-        </li>
-        <li class="b__footerItem">
-          <a href="" class="b__footerLink">Integrations</a>
-        </li>
-      </ol>
-      <p class="text-color-neutral-1"><strong>Product</strong></p>
-      <ol class="b__footerList text-color-neutral-2">
-        <li class="b__footerItem">
-          <a href="" class="b__footerLink">Overview</a>
-        </li>
-        <li class="b__footerItem">
-          <a href="" class="b__footerLink">Pricing</a>
-        </li>
-        <li class="b__footerItem">
-          <a href="" class="b__footerLink">Marketplace</a>
-        </li>
-        <li class="b__footerItem">
-          <a href="" class="b__footerLink">Features</a>
-        </li>
-        <li class="b__footerItem">
-          <a href="" class="b__footerLink">Integrations</a>
-        </li>
-      </ol>
-    </footer>
-  </body>
+      <div class="b__sectionImgContainer">
+        <img src="./images/illustration-laptop-mobile.svg" width="100%" alt="" />
+      </div>
+      <h4 class="b__sectionHeader text-color-primary-3">Header 1</h4>
+      <p class="b__sectionContent text-color-neutral-4">
+        Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
+        commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus
+        et magnis dis parturient montes, nascetur ridiculus mus. Donec quam
+      </p>
+      <h4 class="b__sectionHeader text-color-primary-3">Header 1</h4>
+      <p class="b__sectionContent text-color-neutral-4">
+        Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
+        commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus
+        et magnis dis parturient montes, nascetur ridiculus mus. Donec quam
+        felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla
+        consequat massa quis enim. Donec pede justo, fringilla vel, aliquet
+        nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a,
+        venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium.
+        Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean
+        vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat
+      </p>
+    </section>
+  </main>
+  <footer class="b__footerContainer bg-color-neutral-4">
+    <h4 class="b__footerContainerTitle text-color-neutral-1">Blogr</h4>
+    <p class="text-color-neutral-1"><strong>Product</strong></p>
+    <ol class="b__footerList text-color-neutral-2">
+      <li class="b__footerItem">
+        <a href="" class="b__footerLink">Overview</a>
+      </li>
+      <li class="b__footerItem">
+        <a href="" class="b__footerLink">Pricing</a>
+      </li>
+      <li class="b__footerItem">
+        <a href="" class="b__footerLink">Marketplace</a>
+      </li>
+      <li class="b__footerItem">
+        <a href="" class="b__footerLink">Features</a>
+      </li>
+      <li class="b__footerItem">
+        <a href="" class="b__footerLink">Integrations</a>
+      </li>
+    </ol>
+    <p class="text-color-neutral-1"><strong>Product</strong></p>
+    <ol class="b__footerList text-color-neutral-2">
+      <li class="b__footerItem">
+        <a href="" class="b__footerLink">Overview</a>
+      </li>
+      <li class="b__footerItem">
+        <a href="" class="b__footerLink">Pricing</a>
+      </li>
+      <li class="b__footerItem">
+        <a href="" class="b__footerLink">Marketplace</a>
+      </li>
+      <li class="b__footerItem">
+        <a href="" class="b__footerLink">Features</a>
+      </li>
+      <li class="b__footerItem">
+        <a href="" class="b__footerLink">Integrations</a>
+      </li>
+    </ol>
+  </footer>
+  <script>
+    //  menu toggle handler
+    document
+      .querySelector(".b__navMenuButton")
+      .addEventListener("click", function (e) {
+        const btn = document
+          .querySelector(".b__navMenuButton");
+        btn.classList.toggle("b__navMenuButtonIconClosed");
+        const menu = document.querySelector(
+          ".b__navMenuButtonContainer .b__navMenu"
+        );
+        menu.classList.toggle("b__navMenuClosed");
+      });
+    // sub menu toggle handler
+    document
+      .querySelector(".b__navSubMenuButtonContainer .b__navSubMenuItemButton")
+      .addEventListener("click", function (e) {
+
+        const menu = document.querySelector(
+          ".b__navSubMenuButtonContainer .b__navSubMenu"
+        );
+        const icon = document
+          .querySelector(".b__navSubMenuButtonContainer .b__navSubMenuItemButton .b__navMenuItemButtonIcon");
+        menu.classList.toggle("b__navMenuClosed");
+        icon.classList.toggle('b__navMenuItemButtonIconClosed');
+      });
+  </script>
+</body>
+
 </html>
