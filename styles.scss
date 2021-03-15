@@ -125,7 +125,6 @@ html {
 // Section 2
 
 .b__section {
-  margin-top: 30px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -139,4 +138,75 @@ html {
 .b__sectionContent {
   font-size: 0.8em;
   text-align: center;
+}
+
+// Section 3
+
+.b__artSection {
+  margin-top: 200px;
+  height: 95vh;
+  position: relative;
+}
+.b__artSectionBackgroundLayers {
+  position: relative;
+  border-radius: 0 20% 0 20%;
+  overflow: hidden;
+  height: 90%;
+}
+.b__artSectionBackgroundLayerPhones {
+  position: absolute;
+  top: -150px;
+  left: 0;
+  object-fit: contain;
+  width: 100%;
+  z-index: 10;
+}
+.b__artSectionBackgroundLayerCircle {
+  width: 100%;
+  height: 80%;
+  object-fit: contain;
+  transform: scale(1.6);
+  margin-top: -100px;
+}
+.b__artSectionBackgroundInfo {
+  position: absolute;
+  top: 220px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 20px;
+}
+.b__artSectionBackgroundInfoHeader {
+}
+.b__artSectionBackgroundInfoDetails {
+  font-size: 0.8em;
+  text-align: center;
+}
+
+.b__footerContainer {
+  overflow: hidden;
+  border-radius: 0 100px 0 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.b__footerContainerTitle {
+  font-size: 1.8em;
+}
+.b__footerList {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  align-items:center;
+  padding: 0;
+
+}
+.b__footerItem{
+  margin: 2px 0;
+}
+.b__footerLink {
+  color: unset;
+  text-decoration: none;
+
+
 }

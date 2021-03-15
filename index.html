@@ -4,21 +4,26 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
+    <link
+      rel="icon"
+      href="./images/favicon-32x32.png"
+      type="image/gif"
+      sizes="16x16"
+    />
     <title>Mahmoud Shahin</title>
     <link rel="stylesheet" href="./styles.css" />
   </head>
   <body>
     <main class="b__page">
-      <section class="b__header text-color-neutral-1">
-        <div class="b__nav">
+      <section class="b__header">
+        <div class="b__nav text-color-neutral-1">
           <h4 class="b__navTitle">Blogr</h4>
           <button class="b__navMenuButton">
             <img src="./images/icon-hamburger.svg" width="25px" alt="" />
           </button>
         </div>
 
-        <div class="b__bannerContainerInfo">
+        <div class="b__bannerContainerInfo text-color-neutral-1">
           <h3 class="b__bannerContainerHeader">
             A modern <br />publishing platform
           </h3>
@@ -26,10 +31,14 @@
             Grow your audience and build your <br />online brand
           </p>
           <div class="b__bannerContainerButtons">
-            <button class="b__bannerContainerButton text-color-gradient-2 b__activeButton">
+            <button
+              class="b__bannerContainerButton text-color-primary-1 b__activeButton"
+            >
               Start for Free
             </button>
-            <button class="b__bannerContainerButton text-color-neutral-1">Learn More</button>
+            <button class="b__bannerContainerButton text-color-neutral-1">
+              Learn More
+            </button>
           </div>
         </div>
         <span class="b__headerBackground bg-color-primary-1">
@@ -42,17 +51,17 @@
           />
         </span>
       </section>
-      <section class="b__section text-color-primary-3">
-        <h4 class="b__sectionHeader">Header 1</h4>
-        <span class="b__sectionImgContainer">
+      <section class="b__section">
+        <h4 class="b__sectionHeader text-color-primary-3">Header 1</h4>
+        <div class="b__sectionImgContainer">
           <img
-            src="./images/illustration-editor-desktop.svg"
+            src="./images/illustration-editor-mobile.svg"
             width="100%"
             alt=""
           />
-        </span>
-        <h4 class="b__sectionHeader">Header 1</h4>
-        <p class="b__sectionContent">
+        </div>
+        <h4 class="b__sectionHeader text-color-primary-3">Header 1</h4>
+        <p class="b__sectionContent text-color-neutral-4">
           Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
           commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus
           et magnis dis parturient montes, nascetur ridiculus mus. Donec quam
@@ -75,8 +84,8 @@
           sagittis magna. Sed consequat, leo eget bibendum sodales, augue velit
           cursus nunc,
         </p>
-        <h4 class="b__sectionHeader">Header 1</h4>
-        <p class="b__sectionContent">
+        <h4 class="b__sectionHeader text-color-primary-3">Header 1</h4>
+        <p class="b__sectionContent  text-color-neutral-4">
           Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
           commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus
           et magnis dis parturient montes, nascetur ridiculus mus. Donec quam
@@ -100,54 +109,72 @@
           cursus nunc,
         </p>
       </section>
+      <section class="b__artSection">
+        <div class="b__artSectionBackgroundLayers bg-color-gradient-3">
+          <img
+            class="b__artSectionBackgroundLayerCircle"
+            src="./images/bg-pattern-circles.svg"
+            alt=""
+          />
+        </div>
+        <img
+          class="b__artSectionBackgroundLayerPhones"
+          src="./images/illustration-phones.svg"
+          alt=""
+        />
+        <div class="b__artSectionBackgroundInfo">
+          <h3 class="b__artSectionBackgroundInfoHeader text-color-neutral-1">
+            Header
+          </h3>
+          <p class="b__artSectionBackgroundInfoDetails text-color-neutral-2">
+            quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius
+            laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel
+            augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam
+            rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam
+            semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam
+            nunc, blandit vel, luctus pulvinar, hendrerit id, lorem.
+          </p>
+        </div>
+      </section>
     </main>
-    <!-- <footer class="b__footerContainer">
-      <h2>Blogr</h2>
-      <p>Product</p>
-      <ol class="b__footerList">
-        <li>
+    <footer class="b__footerContainer bg-color-neutral-4">
+      <h4 class="b__footerContainerTitle text-color-neutral-1">Blogr</h4>
+      <p class="text-color-neutral-1"><strong>Product</strong></p>
+      <ol class="b__footerList text-color-neutral-2">
+        <li class="b__footerItem">
           <a href="" class="b__footerLink">Overview</a>
         </li>
-        <li>
+        <li class="b__footerItem">
           <a href="" class="b__footerLink">Pricing</a>
         </li>
-        <li>
+        <li class="b__footerItem">
           <a href="" class="b__footerLink">Marketplace</a>
         </li>
-        <li>
+        <li class="b__footerItem">
           <a href="" class="b__footerLink">Features</a>
         </li>
-        <li>
+        <li class="b__footerItem">
           <a href="" class="b__footerLink">Integrations</a>
         </li>
       </ol>
-      <p>Company</p>
-      <ol class="b__footerList">
-        <li>
+      <p class="text-color-neutral-1"><strong>Product</strong></p>
+      <ol class="b__footerList text-color-neutral-2">
+        <li class="b__footerItem">
           <a href="" class="b__footerLink">Overview</a>
         </li>
-        <li>
+        <li class="b__footerItem">
           <a href="" class="b__footerLink">Pricing</a>
         </li>
-        <li>
+        <li class="b__footerItem">
           <a href="" class="b__footerLink">Marketplace</a>
         </li>
-        <li>
+        <li class="b__footerItem">
           <a href="" class="b__footerLink">Features</a>
         </li>
-      </ol>
-      <p>Connect</p>
-      <ol class="b__footerList">
-        <li>
-          <a href="" class="b__footerLink">Overview</a>
-        </li>
-        <li>
-          <a href="" class="b__footerLink">Pricing</a>
-        </li>
-        <li>
-          <a href="" class="b__footerLink">Marketplace</a>
+        <li class="b__footerItem">
+          <a href="" class="b__footerLink">Integrations</a>
         </li>
       </ol>
-    </footer> -->
+    </footer>
   </body>
 </html>
