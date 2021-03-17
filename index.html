@@ -18,98 +18,92 @@
     <main class="b__page">
       <section class="b__header">
         <span class="b__mobileNav">
-          <div class="b__nav text-color-neutral-1">
-            <h4 class="b__navTitle">Blogr</h4>
+          <div class="b__nav">
+            <span class="b__navTitle">Blogr</span>
             <div class="b__navMenuButtonContainer">
               <button id="b__navMenuButton" class="b__navMenuButton"></button>
-              <ol class="b__navMenu bg-color-neutral-1 b__navMenuClosed">
-                <li class="b__navMenuItem">
+              <span class="b__navMenu bg-color-neutral-1 b__navMenuClosed">
+                <span class="b__navMenuItem">
                   <div class="b__navSubMenuButtonContainer">
                     <a
                       class="b__navSubMenuItemButton text-color-neutral-3"
                       type="button"
                     >
-                      Link 1
+                      Connect
                       <span class="b__navMenuItemButtonIcon"></span>
                     </a>
-                    <ol
+                    <span
                       class="b__navSubMenu bg-color-neutral-2 b__navMenuClosed"
                     >
-                      <li class="b__navSubMenuItem bg-color-neutral-2">
+                      <span class="b__navSubMenuItem bg-color-neutral-2">
                         <a
-                          class="b__navSubMenuItemButton text-color-neutral-3"
+                          class="b__navSubMenuItemButton b__subLink"
                           type="button"
                         >
-                          Sub Link 1
+                          Contact
                         </a>
-                      </li>
-                      <li class="b__navSubMenuItem bg-color-neutral-2">
+                      </span>
+                      <span class="b__navSubMenuItem bg-color-neutral-2">
                         <a
-                          class="b__navSubMenuItemButton text-color-neutral-3"
+                          class="b__navSubMenuItemButton b__subLink"
                           type="button"
                         >
-                          Sub Link 1
+                          Newsletter
                         </a>
-                      </li>
-                    </ol>
+                      </span>
+                    </span>
                   </div>
-                </li>
-                <li class="b__navMenuItem">
+                </span>
+                <span class="b__navMenuItem">
                   <div class="b__navMenuDivider"></div>
-                </li>
-                <li class="b__navMenuItem">
+                </span>
+                <span class="b__navMenuItem">
                   <a class="b__navMenuLoginButton">Login</a>
-                  <a class="b__navMenuSignUpButton bg-color-gradient-1"
-                    >Sign Up</a
-                  >
-                </li>
-              </ol>
+                  <a class="b__navMenuSignUpButton">Sign Up</a>
+                </span>
+              </span>
             </div>
           </div>
         </span>
         <div class="b__desktopNav">
-          <h1 class="b__desktopNavLogo">logo</h1>
-          <ul class="b__desktopNavLinksList">
-            <li class="b__desktopNavLinkListItem">
-              <button class="b__desktopNavLink"> Link 1 <i class="b__desktopNavLinkIcon"></i></button>
-              <ul class="b__desktopSubNavLinksList">
-                <li class="b__desktopSubNavLinkListItem">
+          <span class="b__desktopNavLogo">logo</span>
+          <span class="b__desktopNavLinksList">
+            <span class="b__desktopNavLinkListItem">
+              <button class="b__desktopNavLink">
+                Link 1 <i class="b__desktopNavLinkIcon"></i>
+              </button>
+              <span class="b__desktopSubNavLinksList">
+                <span class="b__desktopSubNavLinkListItem">
                   <a href="" class="b__desktopSubNavLink">Link 1</a>
-                </li>
-                <li class="b__desktopSubNavLinkListItem">
+                </span>
+                <span class="b__desktopSubNavLinkListItem">
                   <a href="" class="b__desktopSubNavLink">Link 1</a>
-                </li>
-              </ul>
-            </li>
-          </ul>
-          <ul class="b__desktopNavButtonsList">
-            <li class="b__desktopNavMenuItem">
+                </span>
+              </span>
+            </span>
+          </span>
+          <span class="b__desktopNavButtonsList">
+            <span class="b__desktopNavMenuItem">
               <a class="b__desktopNavMenuLoginButton">Login</a>
               <a class="b__desktopNavMenuSignUpButton bg-color-gradient-1"
                 >Sign Up</a
               >
-            </li>
-          </ul>
-        </div>  
-        <div class="b__bannerContainerInfo text-color-neutral-1">
-          <h3 class="b__bannerContainerHeader">
-            A modern publishing platform
-          </h3>
+            </span>
+          </span>
+        </div>
+        <div class="b__bannerContainerInfo">
+          <span class="b__bannerContainerHeader"
+            >A modern publishing platform</span
+          >
           <p class="b__bannerContainerSubHeader">
             Grow your audience and build your online brand
           </p>
           <div class="b__bannerContainerButtons">
-            <button
-              class="b__bannerContainerButton text-color-primary-1 b__activeButton"
-            >
-              Start for Free
-            </button>
-            <button class="b__bannerContainerButton text-color-neutral-1">
-              Learn More
-            </button>
+            <button class="b__bannerContainerButton">Start for Free</button>
+            <button class="b__bannerContainerButton">Learn More</button>
           </div>
         </div>
-        <span class="b__headerBackground bg-color-primary-1">
+        <!-- <span class="b__headerBackground bg-color-primary-1">
           <img
             class="b__headerBackgroundImg"
             src="./images/bg-pattern-intro.svg"
@@ -117,7 +111,7 @@
             height="100%"
             alt=""
           />
-        </span>
+        </span> -->
       </section>
       <section class="b__section">
         <h4 class="b__sectionHeader text-color-primary-3">Header 1</h4>
@@ -142,22 +136,12 @@
         </p>
       </section>
       <section class="b__artSection">
-        <div class="b__artSectionBackgroundLayers bg-color-gradient-3">
-          <img
-            class="b__artSectionBackgroundLayerCircle"
-            src="./images/bg-pattern-circles.svg"
-            alt=""
-          />
-        </div>
-        <img
-          class="b__artSectionBackgroundLayerPhones"
-          src="./images/illustration-phones.svg"
-          alt=""
-        />
+        <div class="b__artSectionBackgroundLayerPhones"></div>
+
         <div class="b__artSectionBackgroundInfo">
-          <h3 class="b__artSectionBackgroundInfoHeader text-color-neutral-1">
+          <span class="b__artSectionBackgroundInfoHeader text-color-neutral-1">
             Header
-          </h3>
+          </span>
           <p class="b__artSectionBackgroundInfoDetails text-color-neutral-2">
             quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius
             laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel
@@ -199,41 +183,41 @@
     <footer class="b__footerContainer bg-color-neutral-4">
       <h4 class="b__footerContainerTitle text-color-neutral-1">Blogr</h4>
       <p class="text-color-neutral-1"><strong>Product</strong></p>
-      <ol class="b__footerList text-color-neutral-2">
-        <li class="b__footerItem">
+      <span class="b__footerList text-color-neutral-2">
+        <span class="b__footerItem">
           <a href="" class="b__footerLink">Overview</a>
-        </li>
-        <li class="b__footerItem">
+        </span>
+        <span class="b__footerItem">
           <a href="" class="b__footerLink">Pricing</a>
-        </li>
-        <li class="b__footerItem">
+        </span>
+        <span class="b__footerItem">
           <a href="" class="b__footerLink">Marketplace</a>
-        </li>
-        <li class="b__footerItem">
+        </span>
+        <span class="b__footerItem">
           <a href="" class="b__footerLink">Features</a>
-        </li>
-        <li class="b__footerItem">
+        </span>
+        <span class="b__footerItem">
           <a href="" class="b__footerLink">Integrations</a>
-        </li>
-      </ol>
+        </span>
+      </span>
       <p class="text-color-neutral-1"><strong>Product</strong></p>
-      <ol class="b__footerList text-color-neutral-2">
-        <li class="b__footerItem">
+      <span class="b__footerList text-color-neutral-2">
+        <span class="b__footerItem">
           <a href="" class="b__footerLink">Overview</a>
-        </li>
-        <li class="b__footerItem">
+        </span>
+        <span class="b__footerItem">
           <a href="" class="b__footerLink">Pricing</a>
-        </li>
-        <li class="b__footerItem">
+        </span>
+        <span class="b__footerItem">
           <a href="" class="b__footerLink">Marketplace</a>
-        </li>
-        <li class="b__footerItem">
+        </span>
+        <span class="b__footerItem">
           <a href="" class="b__footerLink">Features</a>
-        </li>
-        <li class="b__footerItem">
+        </span>
+        <span class="b__footerItem">
           <a href="" class="b__footerLink">Integrations</a>
-        </li>
-      </ol>
+        </span>
+      </span>
     </footer>
     <script
       src="https://code.jquery.com/jquery-3.6.0.js"
@@ -241,6 +225,10 @@
       crossorigin="anonymous"
     ></script>
     <script>
+      /*
+        Mobile
+
+      */
       //  menu toggle handler
       $(".b__navMenuButton").on("click", function (e) {
         $(e.currentTarget).toggleClass("b__navMenuButtonIconClosed");
@@ -262,6 +250,19 @@
             .toggleClass("b__navMenuItemButtonIconClosed");
         }
       );
+
+      /*
+        Desktop
+      */
+      $(".b__desktopNavLink").on("click", function (e) {
+        $(e.currentTarget)
+          .parent(".b__desktopNavLinkListItem")
+          .find(".b__desktopSubNavLinksList")
+          .toggleClass("b__desktopNavMenuOpened");
+        $(e.currentTarget)
+          .find(".b__desktopNavLinkIcon")
+          .toggleClass("b__desktopNavOpenedLinkIcon");
+      });
     </script>
   </body>
 </html>
