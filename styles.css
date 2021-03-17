@@ -314,26 +314,24 @@ html * {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 10px;
-  margin: 1em 0;
+  color: #4b5862;
 }
 
 .b__sectionHeader {
-  font-size: 1.2em;
+  font-size: 1.5em;
 }
 
 .b__sectionImgContainer {
-  height: 200px;
+  height: 300px;
   width: 100vw;
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
-  background-image: url("./images/illustration-editor-mobile.svg");
 }
 
 .b__sectionContent {
-  font-size: 0.8em;
   text-align: center;
+  width: 80%;
 }
 
 .b__artSection {
@@ -348,12 +346,19 @@ html * {
       -ms-flex-direction: column;
           flex-direction: column;
   border-radius: 0 20% 0 20%;
-  background-color: #2c2d3f;
+  background: -webkit-gradient(linear, left top, left bottom, from(#2c2d3f), to(#3f4164));
+  background: linear-gradient(to bottom, #2c2d3f, #3f4164);
+}
+
+.b__artSectionBackground {
+  display: block;
   background-image: url("./images/bg-pattern-circles.svg");
-  background-size: cover;
-  background-position-y: -200px;
-  background-position-x: center;
+  background-size: 500px;
+  background-position: -80px -200px;
   background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
+  position: absolute;
 }
 
 .b__artSectionBackgroundLayerPhones {
@@ -362,7 +367,7 @@ html * {
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
-  height: 30vh;
+  height: 200px;
   width: 100vw;
   -webkit-transform: translateY(-100px) scale(1.8);
           transform: translateY(-100px) scale(1.8);
@@ -379,15 +384,20 @@ html * {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 0 15px;
+  z-index: 10;
+}
+
+.b__artSectionBackgroundInfoHeader {
+  font-size: 1.5em;
+  color: white;
 }
 
 .b__artSectionBackgroundInfoDetails {
-  font-size: 0.8em;
   text-align: center;
   height: 100px;
-  overflow: hidden;
   line-height: 2em;
+  font-size: 0.9em;
+  color: #c8c8cb;
 }
 
 .b__footerContainer {
@@ -403,6 +413,8 @@ html * {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  background: -webkit-gradient(linear, left top, left bottom, from(#2c2d3f), to(#3f4164));
+  background: linear-gradient(to bottom, #2c2d3f, #3f4164);
 }
 
 .b__footerContainerTitle {

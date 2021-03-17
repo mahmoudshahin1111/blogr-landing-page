@@ -40,7 +40,7 @@ html {
   background-repeat: no-repeat;
   background-size: 1800px;
   border-radius: 0 0 0 80px;
-  
+
   font-weight: 700;
 }
 .b__nav {
@@ -125,8 +125,8 @@ html {
     overflow: hidden;
     transition: height 300ms ease;
     background-color: rgba($neutral-2, 0.2);
-  width: 100%;
-  margin-top: 20px;
+    width: 100%;
+    margin-top: 20px;
   }
   .b__navSubMenuItem {
     display: flex;
@@ -147,9 +147,9 @@ html {
     text-align: center;
     font-size: 1.2em;
   }
-.b__subLink{
-  font-size: 1em;
-}
+  .b__subLink {
+    font-size: 1em;
+  }
   .b__navMenuDivider {
     width: 100%;
     height: 1px;
@@ -192,7 +192,6 @@ html {
   margin-top: 80px;
   padding: 0 10px;
   color: $neutral-1;
-
 }
 
 .b__bannerContainerButtons {
@@ -229,23 +228,21 @@ html {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 10px;
-  margin: 1em 0;
+  color: $neutral-3;
 }
 .b__sectionHeader {
-  font-size: 1.2em;
+  font-size: 1.5em;
 }
 .b__sectionImgContainer {
-  height: 200px;
+  height: 300px;
   width: 100vw;
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
-  background-image: url("./images/illustration-editor-mobile.svg");
 }
 .b__sectionContent {
-  font-size: 0.8em;
   text-align: center;
+  width: 80%;
 }
 
 // Section 3
@@ -257,21 +254,26 @@ html {
   display: flex;
   flex-direction: column;
   border-radius: 0 20% 0 20%;
-  background-color: $gradient-3;
-  background-image: url("./images/bg-pattern-circles.svg");
-  background-size: cover;
-  background-position-y: -200px;
-  background-position-x: center;
-  background-repeat: no-repeat;
-}
+  background: linear-gradient(to bottom,$gradient-3,$gradient-4);
 
+}
+.b__artSectionBackground{display: block;
+  background-image: url("./images/bg-pattern-circles.svg");
+  background-size: 500px;
+  background-position:-80px -200px;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+
+}
 .b__artSectionBackgroundLayerPhones {
   display: block;
   background-image: url("./images/illustration-phones.svg");
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
-  height: 30vh;
+  height: 200px;
   width: 100vw;
   transform: translateY(-100px) scale(1.8);
 }
@@ -280,16 +282,18 @@ html {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 0 15px;
+  z-index: 10;
 }
 .b__artSectionBackgroundInfoHeader {
+  font-size: 1.5em;
+  color: $neutral-1;
 }
 .b__artSectionBackgroundInfoDetails {
-  font-size: 0.8em;
   text-align: center;
   height: 100px;
-  overflow: hidden;
   line-height: 2em;
+  font-size: 0.9em;
+  color: $neutral-2;
 }
 
 .b__footerContainer {
@@ -298,6 +302,7 @@ html {
   display: flex;
   flex-direction: column;
   align-items: center;
+  background:linear-gradient(to bottom,$gradient-3,$gradient-4);
 }
 .b__footerContainerTitle {
   font-size: 1.8em;
