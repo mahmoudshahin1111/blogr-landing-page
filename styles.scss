@@ -302,7 +302,9 @@ html {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background:linear-gradient(to bottom,$gradient-3,$gradient-4);
+  background-color: $neutral-4;
+  color: $neutral-1;
+  padding-bottom: 50px;
 }
 .b__footerContainerTitle {
   font-size: 1.8em;
@@ -316,6 +318,7 @@ html {
 }
 .b__footerItem {
   margin: 2px 0;
+  color: $neutral-2;
 }
 .b__footerLink {
   color: unset;

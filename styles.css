@@ -413,8 +413,9 @@ html * {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background: -webkit-gradient(linear, left top, left bottom, from(#2c2d3f), to(#3f4164));
-  background: linear-gradient(to bottom, #2c2d3f, #3f4164);
+  background-color: #25252d;
+  color: white;
+  padding-bottom: 50px;
 }
 
 .b__footerContainerTitle {
@@ -438,6 +439,7 @@ html * {
 
 .b__footerItem {
   margin: 2px 0;
+  color: #c8c8cb;
 }
 
 .b__footerLink {
