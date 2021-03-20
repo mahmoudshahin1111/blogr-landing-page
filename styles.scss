@@ -232,14 +232,20 @@ html {
   .b__sectionHeader {
     font-size: 1.5em;
   }
-  .b__sectionImgContainer {
+  .sectionImage {
     height: 300px;
     width: 100vw;
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
+    order: -1;
   }
-
+  .sectionImageLaptop {
+    background-image: url("/images/illustration-laptop-mobile.svg");
+  }
+  .sectionImageEditor{
+    background-image: url("./images/illustration-editor-mobile.svg");
+  }
   .b__group {
     display: flex;
     flex-direction: column;
@@ -443,16 +449,18 @@ html {
   .b__section {
     display: flex;
     flex-direction: row;
-    .b__sectionImageDesktop {
-      background-image: url("./images/illustration-laptop-desktop.svg");
+    .sectionImage {
       background-repeat: no-repeat;
       background-size: contain;
       background-position: center;
       flex: 0.5;
       height: 786px;
     }
-    .b__sectionImgContainer {
-      display: none;
+    .sectionImageLaptop {
+      background-image: url("./images/illustration-laptop-desktop.svg");
+    }
+    .sectionImageEditor{
+      background-image: url("./images/illustration-editor-desktop.svg");
     }
 
     .b__group {

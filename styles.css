@@ -321,12 +321,23 @@ html * {
   font-size: 1.5em;
 }
 
-.b__section .b__sectionImgContainer {
+.b__section .sectionImage {
   height: 300px;
   width: 100vw;
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
+  -webkit-box-ordinal-group: 0;
+      -ms-flex-order: -1;
+          order: -1;
+}
+
+.b__section .sectionImageLaptop {
+  background-image: url("/images/illustration-laptop-mobile.svg");
+}
+
+.b__section .sectionImageEditor {
+  background-image: url("./images/illustration-editor-mobile.svg");
 }
 
 .b__section .b__group {
@@ -605,8 +616,7 @@ html * {
         -ms-flex-direction: row;
             flex-direction: row;
   }
-  .b__section .b__sectionImageDesktop {
-    background-image: url("./images/illustration-laptop-desktop.svg");
+  .b__section .sectionImage {
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
@@ -615,8 +625,11 @@ html * {
             flex: 0.5;
     height: 786px;
   }
-  .b__section .b__sectionImgContainer {
-    display: none;
+  .b__section .sectionImageLaptop {
+    background-image: url("./images/illustration-laptop-desktop.svg");
+  }
+  .b__section .sectionImageEditor {
+    background-image: url("./images/illustration-editor-desktop.svg");
   }
   .b__section .b__group {
     display: -webkit-box;
