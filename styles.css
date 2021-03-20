@@ -498,7 +498,7 @@ html * {
 
 @media (min-width: 400px) {
   .b__header {
-    height: 60vh;
+    height: 70vh;
     padding: 0;
     margin: 0;
   }
@@ -644,6 +644,9 @@ html * {
         -ms-flex: 0.5;
             flex: 0.5;
     height: 786px;
+    -webkit-box-ordinal-group: unset;
+        -ms-flex-order: unset;
+            order: unset;
   }
   .b__section .sectionImageLaptop {
     background-image: url("./images/illustration-laptop-desktop.svg");

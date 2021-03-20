@@ -353,7 +353,7 @@ html {
 
 @media (min-width: 400px) {
   .b__header {
-    height: 60vh;
+    height: 70vh;
     padding: 0;
     margin: 0;
   }
@@ -467,6 +467,7 @@ html {
       background-position: center;
       flex: 0.5;
       height: 786px;
+      order: unset;
     }
     .sectionImageLaptop {
       background-image: url("./images/illustration-laptop-desktop.svg");
