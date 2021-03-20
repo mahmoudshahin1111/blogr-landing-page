@@ -270,7 +270,7 @@ html {
   position: relative;
   display: flex;
   flex-direction: column;
-  border-radius: 0 20% 0 20%;
+  border-radius: 0 50px 0 50px;
   background: linear-gradient(to bottom, $gradient-3, $gradient-4);
 }
 .b__artSectionBackground {
@@ -320,8 +320,7 @@ html {
   align-items: center;
   background-color: $neutral-4;
   color: $neutral-1;
-  padding:20px 0  50px 0;
-
+  padding: 20px 0 50px 0;
 }
 .b__footerContainerTitle {
   font-size: 2em;
@@ -474,6 +473,40 @@ html {
           width: 80%;
         }
       }
+    }
+  }
+  .b__artSection {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 50vh;
+    .b__artSectionBackground {
+    }
+    .b__artSectionBackgroundLayerPhones {
+      width: 552px;
+      height: 579px;
+      transform: unset;
+      z-index: 10;
+      flex: 0.4;
+    }
+
+    .b__artSectionBackgroundInfo {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      z-index: 10;
+      flex: 0.5;
+    }
+    .b__artSectionBackgroundInfoHeader {
+      font-size: 1.5em;
+      color: $neutral-1;
+    }
+    .b__artSectionBackgroundInfoDetails {
+      text-align: center;
+      height: 100px;
+      line-height: 2em;
+      font-size: 0.9em;
+      color: $neutral-2;
     }
   }
   .b__footerContainer {

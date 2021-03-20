@@ -378,7 +378,7 @@ html * {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  border-radius: 0 20% 0 20%;
+  border-radius: 0 50px 0 50px;
   background: -webkit-gradient(linear, left top, left bottom, from(#2c2d3f), to(#3f4164));
   background: linear-gradient(to bottom, #2c2d3f, #3f4164);
 }
@@ -448,7 +448,7 @@ html * {
           align-items: center;
   background-color: #25252d;
   color: white;
-  padding: 20px 0  50px 0;
+  padding: 20px 0 50px 0;
 }
 
 .b__footerContainerTitle {
@@ -650,6 +650,56 @@ html * {
   .b__section .b__group .b__text .b__sectionContent {
     margin-top: 10px;
     width: 80%;
+  }
+  .b__artSection {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    height: 50vh;
+  }
+  .b__artSection .b__artSectionBackgroundLayerPhones {
+    width: 552px;
+    height: 579px;
+    -webkit-transform: unset;
+            transform: unset;
+    z-index: 10;
+    -webkit-box-flex: 0.4;
+        -ms-flex: 0.4;
+            flex: 0.4;
+  }
+  .b__artSection .b__artSectionBackgroundInfo {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    z-index: 10;
+    -webkit-box-flex: 0.5;
+        -ms-flex: 0.5;
+            flex: 0.5;
+  }
+  .b__artSection .b__artSectionBackgroundInfoHeader {
+    font-size: 1.5em;
+    color: white;
+  }
+  .b__artSection .b__artSectionBackgroundInfoDetails {
+    text-align: center;
+    height: 100px;
+    line-height: 2em;
+    font-size: 0.9em;
+    color: #c8c8cb;
   }
   .b__footerContainer {
     display: -webkit-box;
