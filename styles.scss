@@ -223,13 +223,21 @@ html {
 }
 
 // Section 2
-
+.b__sectionMainHeader{
+  display: flex;
+  margin: 50px 0;
+ justify-content: center;
+ font-size: 1.5em;
+ font-weight: 700;
+ color: $neutral-3;
+}
 .b__section {
   display: flex;
   flex-direction: column;
   align-items: center;
   color: $neutral-3;
   .b__sectionHeader {
+    font-weight: 700;
     font-size: 1.5em;
   }
   .sectionImage {
@@ -475,7 +483,13 @@ html {
     .sectionImageEditor{
       background-image: url("./images/illustration-editor-desktop.svg");
     }
-
+    .b__sectionMainHeader{
+      display: flex;
+      width: 100vw;
+      margin: 50px 0;
+      background-color: aqua;
+      text-align: center;
+    }
     .b__group {
       display: flex;
       flex-direction: column;

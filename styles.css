@@ -303,6 +303,19 @@ html * {
   color: #ff525d;
 }
 
+.b__sectionMainHeader {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 50px 0;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 1.5em;
+  font-weight: 700;
+  color: #4b5862;
+}
+
 .b__section {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -318,6 +331,7 @@ html * {
 }
 
 .b__section .b__sectionHeader {
+  font-weight: 700;
   font-size: 1.5em;
 }
 
@@ -653,6 +667,15 @@ html * {
   }
   .b__section .sectionImageEditor {
     background-image: url("./images/illustration-editor-desktop.svg");
+  }
+  .b__section .b__sectionMainHeader {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100vw;
+    margin: 50px 0;
+    background-color: aqua;
+    text-align: center;
   }
   .b__section .b__group {
     display: -webkit-box;
