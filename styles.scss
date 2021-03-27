@@ -49,6 +49,7 @@ html {
   color: $neutral-1;
   padding: 30px 20px;
   .b__navTitle {
+ 
   }
   .b__navMenuButtonContainer {
     right: 10px;
@@ -227,7 +228,7 @@ html {
   display: flex;
   margin: 50px 0;
  justify-content: center;
- font-size: 1.5em;
+ font-size: 2em;
  font-weight: 700;
  color: $neutral-3;
 }
@@ -238,7 +239,7 @@ html {
   color: $neutral-3;
   .b__sectionHeader {
     font-weight: 700;
-    font-size: 1.5em;
+    font-size: 2em;
   }
   .sectionImage {
     height: 300px;
@@ -379,11 +380,12 @@ html {
     margin: 0;
     .b__desktopNavLogo {
       margin-left: 80px;
+      font-size: 2em;
     }
     .b__desktopNavLinksList {
       list-style: none;
       padding: 0;
-      margin: 0;
+      margin-left: 100px;
       display: flex;
       align-items: center;
     }
